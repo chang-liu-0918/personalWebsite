@@ -1,0 +1,91 @@
+@import "menu";
+@import "config";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+%picture {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  flex: auto;
+  box-sizing: border-box;
+  border: 5px lighten($primary-color, 10%);
+  border-radius: 1.5rem;
+  box-shadow: (2px 2px darken($primary-color, 5%));
+}
+.p-1,
+.p-2,
+.p-3,
+.p-4,
+.p-5,
+.p-6,
+.p-7,
+.p-8 {
+  @extend %picture;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+#p-1-copy,
+#p-2-copy,
+#p-3-copy,
+#p-4-copy,
+#p-5-copy,
+#p-6-copy,
+#p-7-copy,
+#p-8-copy {
+  display: none;
+  position: fixed;
+  background-color: $primary-color;
+  margin: auto;
+  top: 1vh;
+  bottom: 1vh;
+  left: 1vh;
+  right: 1vh;
+  width: 90%;
+  height: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.p-1,
+#p-1-copy {
+  background-image: url(../images/gallery/p-1.jpeg);
+}
+.p-2,
+#p-2-copy {
+  background-image: url(../images/gallery/p-2.jpeg);
+}
+.p-3,
+#p-3-copy {
+  background-image: url(../images/gallery/p-3.jpeg);
+}
+.p-4,
+#p-4-copy {
+  background-image: url(../images/gallery/p-4.jpeg);
+}
+.p-5,
+#p-5-copy {
+  background-image: url(../images/gallery/p-5.jpeg);
+}
+.p-6,
+#p-6-copy {
+  background-image: url(../images/gallery/p-6.jpeg);
+}
+.p-7,
+#p-7-copy {
+  background-image: url(../images/gallery/p-7.jpeg);
+}
+.p-8,
+#p-8-copy {
+  background-image: url(../images/gallery/p-8.jpeg);
+}
