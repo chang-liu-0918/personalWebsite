@@ -8,6 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "deploy": "gh-pages -d Chang's Portfolio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/chang-liu-0918/personalWebsite/issues"
   },
-  "homepage": "https://github.com/chang-liu-0918/personalWebsite#readme"
+  "homepage": "https://chang-liu-0918.github.io/personalWebsite"
 }
