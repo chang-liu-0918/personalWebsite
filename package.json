@@ -1,0 +1,26 @@
+{
+  "name": "f",
+  "version": "1.0.0",
+  "description": "Chang's portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chang-liu-0918/personalWebsite.git"
+  },
+  "keywords": [
+    "Lc15810564664!"
+  ],
+  "author": "Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chang-liu-0918/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/chang-liu-0918/personalWebsite#readme"
+}
