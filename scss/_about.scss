@@ -1,0 +1,86 @@
+@import "config";
+@import "menu";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.about-body {
+  background-color: $primary-color;
+}
+.main-title {
+  left: 0px;
+  top: -50px;
+  margin: 0;
+  padding: 0;
+  .heading-2 {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.about-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    display: flex;
+    color: $secondary-color;
+  }
+  p {
+    display: flex;
+  }
+}
+.my-picture {
+  display: flex;
+  width: 150px;
+  height: 150px;
+
+  border-radius: 5rem;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+
+  .project-sub {
+    display: flex;
+    flex-direction: column;
+    border: 3px $secondary-color solid;
+    border-radius: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px darken($primary-color, 5%);
+
+    .h1,
+    .h2 {
+      display: flex;
+    }
+    .project-name {
+      margin-top: 10px;
+      color: $secondary-color;
+      font-size: 1.6rem;
+    }
+    .project-content {
+      font-size: 1rem;
+      font-weight: 200px;
+      margin-top: 10px;
+    }
+  }
+}
+.project-1:hover {
+  transform: scale(1.1);
+  @include easeInOut;
+}
+.project-2:hover {
+  transform: scale(1.1);
+  @include easeInOut;
+}
+.project-3:hover {
+  transform: scale(1.1);
+  @include easeInOut;
+}

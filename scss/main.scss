@@ -1,0 +1,86 @@
+@import "config";
+@import "menu";
+@import "about";
+@import "gallery";
+@import "contact";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba($primary-color, 100%);
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+.index-body {
+  background: $home-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+//Headings//
+h1,
+h2 {
+  margin-top: 15vh;
+  font-weight: 400px;
+  &.heading-1 {
+    text-align: center;
+    font-size: 6rem;
+  }
+  &.heading-2 {
+    padding: 0.2rem;
+    text-align: center;
+    background-color: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+.heading-lastName {
+  color: $secondary-color;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+  .wechat-img {
+    width: 100px;
+    position: absolute;
+    bottom: 15px;
+    opacity: 0;
+    border: 3px solid $secondary-color;
+  }
+  .icons {
+    margin-top: 1rem;
+    text-align: center;
+    a {
+      padding: 0.5 rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeInOut();
+      }
+    }
+    .wechat-a:hover {
+      .wechat-img {
+        opacity: 1;
+        @include easeInOut;
+      }
+    }
+  }
+}
