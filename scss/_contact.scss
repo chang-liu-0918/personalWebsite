@@ -1,0 +1,48 @@
+@import "menu";
+@import "config";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contact-form {
+  box-sizing: border-box;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  margin: auto;
+  width: 40%;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px $secondary-color solid;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px lighten($primary-color, 10%);
+
+  .Name-input,
+  .Email-input {
+    width: auto;
+    height: 25px;
+    margin: 3px;
+  }
+  .Message-input {
+    resize: none;
+    width: auto;
+    height: 100px;
+  }
+  .Name-input:focus,
+  .Email-input:focus,
+  .Message-input:focus {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  .submit-btn {
+    width: 100px;
+    margin: auto;
+    border-radius: 1.5rem;
+  }
+  #message-label {
+    vertical-align: top;
+  }
+}
